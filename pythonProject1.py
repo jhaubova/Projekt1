@@ -90,7 +90,7 @@ print(f"There are {len(lowercase)} lowercase words.")
 print(f"There are {len(numeric)} numeric strings.")
 print(f"The sum of all the numbers {sum(numeric_suma)}.")
 print(line)
-print(f"LEN | OCCURENCES.center(1) | NR.")
+print(f"LEN | OCCURENCES    | NR.")
 print(line)
 
 # tabulka
@@ -103,7 +103,7 @@ for cislo in numbers:
 highest_number = max(frequency)
 for num in numbers:
     count_of_spaces = highest_number - numbers_of_length.count(num)
-    print(f"{num} | {stars * numbers_of_length.count(num)} {spaces * count_of_spaces} | {numbers_of_length.count(num)}")
+    print(f"{num:3} | {stars * numbers_of_length.count(num)} {spaces * count_of_spaces} | {numbers_of_length.count(num)}")
 
     print(line)
 
